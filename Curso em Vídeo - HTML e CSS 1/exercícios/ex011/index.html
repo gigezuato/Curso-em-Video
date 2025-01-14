@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--primeira forma-->
+    <!--<audio src="midia/(I've Got A) Baby Sister - Reed Mathis.mp3" controls autoplay></audio>-->
+    <!--segunda forma-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/mpeg">
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.ogg" type="audio/ogg">
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/(I've Got A) Baby Sister - Reed Mathis.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--Primeiro o navegador vai tentar carregar o primeiro source, se não conseguir, ele carrega o segundo, se não conseguir, ele carrega o terceiro e se por fim ele não conseguir, vai mostrar o parágrafo-->
+</body>
+</html>
