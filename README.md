@@ -33,5 +33,5 @@
 - [x] Listas
 - [x] Dicionários
 - [x] Funções
-- [ ] Modularização
+- [x] Modularização
 - [ ] Tratamento de erros
