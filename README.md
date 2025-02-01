@@ -34,4 +34,4 @@
 - [x] Dicionários
 - [x] Funções
 - [x] Modularização
-- [ ] Tratamento de erros
+- [x] Tratamento de erros
